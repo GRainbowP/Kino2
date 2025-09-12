@@ -1,0 +1,31 @@
+.header {
+    margin: 20px;
+}
+
+.headerImg {
+    float: left;
+}
+
+.headerImg img {
+    height: 70px;
+    margin-right: 1rem;
+}
+
+.headerLinks {
+    float: right;
+    margin: 20px;
+}
+
+.headerLinks a {
+    padding: 20px;
+    color: grey;
+    text-decoration: none;
+}
+
+.headerLinks a:not(:last-child) {
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.headerLinks a:hover {
+    color: rgba(255, 255, 255, 0.75);
+}
