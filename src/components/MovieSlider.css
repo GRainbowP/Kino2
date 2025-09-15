@@ -10,29 +10,89 @@
     text-align: center;
     justify-content: center;
     align-items: center;
+}
+
+.sliderCard:not(:last-child) {
     margin-right: 20px;
-}
-
-.sliderContent {
-
-}
-
-.sliderImg {
-
 }
 
 .sliderImg img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* position: relative; */
+    position: relative;
     border-radius: 10px;
 }
 
-.sliderInfo {
+.sliderInfo strong {
+    font-size: x-large;
+}
+
+.sliderTags > * {
+    background-color: rgba(60, 60, 60, 1);
+    color: #b9b9b9;
+    margin: 1px;
+    display: inline-block;
+    padding: 0.35em 0.65em;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.sliderScreenings {
+    text-align: center;
+    justify-content: center;
+    max-width: 100%;
+    display: flex;
+}
+
+.sliderTicket {
+    position: relative;
+    background-color: white;
+    display: inline-block;
+    border: 1px solid aqua;
+    border-radius: 5px;
+    min-width: 15%;
+    text-align: center;
+    margin: 2px;
+    padding: 25px 2px 25px 2px;
+}
+
+.sliderTicketHour {
+    color: rgb(33, 37, 41);
+    text-decoration: none;
+    background-color: unset;
+    display: block;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.sliderTicketBuy {
+    background-color: rgb(51, 51, 51);
+    color: white;
+    position: absolute;
+    left: 0;
+    text-decoration: none;
+    width: 100%;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 400;
+    border-radius: 0 0 4px 4px;
+}
+
+.sliderTicketCaptions {
     position: absolute;
     top: 0;
-    left: 0;
     right: 0;
-    bottom: 0;
+    width: 100%;
+    background-color: rgb(101, 206, 248);
+    border-radius: 4px 4px 0 0;
+    color: black;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
 }
