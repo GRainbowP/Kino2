@@ -1,0 +1,101 @@
+.repertoire {
+    background-color: white;
+    color: black;
+}
+
+.repertoire > * {
+    background-color: unset;
+}
+
+.repertoireTitle {
+    text-align: center;
+}
+
+.repertoireTitle span {
+    font-weight: 400;
+}
+
+.repertoireContainer {
+    /* width: 50%; */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: calc(1.5rem * .5);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.repertoireRow {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: calc(-.5 * 1.5rem);
+    margin-left: calc(-.5 * 1.5rem);
+}
+
+.repertoireRow > * {
+    max-width: 100%;
+    padding-right: calc(1.5rem * .5);
+    padding-left: calc(1.5rem * .5);
+    margin-top: 0;
+}
+
+.repertoireCol {
+    width: 50%;
+}
+
+.repertoireCard {
+    margin-bottom: 1rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: white;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.175);
+    border-radius: 0.375rem;
+}
+
+.repertoireCardRow {
+    display: flex;
+}
+
+.repertoireColPoster {
+    width: 33%;
+}
+
+.repertoirePoster {
+    position: relative;
+}
+
+.repertoirePoster a img {
+    border-top-left-radius: 6px;
+    width: 100%;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.repertoireColBody {
+    width: 66%;
+}
+
+.repertoireCardBody {
+    padding: 1rem 1rem;
+}
+
+.repertoireCardBody a {
+    text-decoration: none;
+    line-height: 1;
+    font-size: 1.25rem;
+    margin-bottom: 0;
+    display: block;
+    color: black;
+}
+
+.filmGenreTags {
+    color: rgba(108, 117, 125, 1);
+    padding-bottom: .25rem;
+    padding-top: .25rem;
+    margin-bottom: .25rem;
+    margin-top: 0;
+}

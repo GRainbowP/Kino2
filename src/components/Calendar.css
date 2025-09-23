@@ -8,7 +8,6 @@
 }
 
 .calendarDays {
-    max-width: 1000px;
     width: 100%;
     height: 100%;
     display: flex;
@@ -19,10 +18,12 @@
     margin-right: 20px;
     text-align: center;
     font-size: 18px;
+    width: 100%;
     justify-content: center;
     align-items: center;    
     display: flex;
     background-color: unset;
+    height: 100%;
 }
 
 .calendarDay-white {
@@ -33,6 +34,8 @@
 .calendarDay a {
     text-decoration: none;
     background-color: unset;
+    margin: 20px;
+    width: 25%;
 }
 
 
@@ -41,9 +44,10 @@
     padding: 20px 5px !important;
     border: 3px solid rgb(24, 169, 228);
     border-radius: 5px;
+    background-color: unset;
 }
 
 .calendarDayCard > * {
     color: rgb(14, 93, 124) !important;
-    background-color: #FFFFFF;
+    background-color: unset;
 }
