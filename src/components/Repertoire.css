@@ -1,101 +1,167 @@
 .repertoire {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
 }
 
 .repertoire > * {
-    background-color: unset;
+  background-color: unset;
 }
 
 .repertoireTitle {
-    text-align: center;
+  text-align: center;
 }
 
 .repertoireTitle span {
-    font-weight: 400;
+  font-weight: 400;
 }
 
 .repertoireContainer {
-    /* width: 50%; */
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-right: calc(1.5rem * .5);
-    margin-right: auto;
-    margin-left: auto;
+  width: 70%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: calc(1.5rem * 0.5);
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .repertoireRow {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: calc(-.5 * 1.5rem);
-    margin-left: calc(-.5 * 1.5rem);
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: calc(-0.5 * 1.5rem);
+  margin-left: calc(-0.5 * 1.5rem);
 }
 
 .repertoireRow > * {
-    max-width: 100%;
-    padding-right: calc(1.5rem * .5);
-    padding-left: calc(1.5rem * .5);
-    margin-top: 0;
+  max-width: 100%;
+  padding-right: calc(1.5rem * 0.5);
+  padding-left: calc(1.5rem * 0.5);
+  margin-top: 0;
 }
 
 .repertoireCol {
-    width: 50%;
+  width: 50%;
 }
 
 .repertoireCard {
-    margin-bottom: 1rem;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
-    background-color: white;
-    background-clip: border-box;
-    border: 1px solid rgba(0, 0, 0, 0.175);
-    border-radius: 0.375rem;
+  margin-bottom: 1rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: white;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.175);
+  border-radius: 0.375rem;
 }
 
 .repertoireCardRow {
-    display: flex;
+  display: flex;
 }
 
 .repertoireColPoster {
-    width: 33%;
+  width: 33%;
 }
 
 .repertoirePoster {
-    position: relative;
+  position: relative;
 }
 
 .repertoirePoster a img {
-    border-top-left-radius: 6px;
-    width: 100%;
-    display: block;
-    max-width: 100%;
-    height: auto;
+  border-top-left-radius: 6px;
+  width: 100%;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .repertoireColBody {
-    width: 66%;
+  width: 66%;
 }
 
 .repertoireCardBody {
-    padding: 1rem 1rem;
+  padding: 1rem 1rem;
 }
 
 .repertoireCardBody a {
-    text-decoration: none;
-    line-height: 1;
-    font-size: 1.25rem;
-    margin-bottom: 0;
-    display: block;
-    color: black;
+  text-decoration: none;
+  line-height: 1;
+  font-size: 1.25rem;
+  margin-bottom: 0;
+  display: block;
+  color: black;
 }
 
 .filmGenreTags {
-    color: rgba(108, 117, 125, 1);
-    padding-bottom: .25rem;
-    padding-top: .25rem;
-    margin-bottom: .25rem;
-    margin-top: 0;
+  color: rgba(108, 117, 125, 1);
+  padding-bottom: 0.25rem;
+  padding-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  margin-top: 0;
+}
+
+.tagAge {
+  display: inline-block;
+  padding: 0.35em 0.65em;
+  font-size: 0.75em;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: text-bottom !important;
+  color: #0a3622 !important;
+  font-weight: 600 !important;
+  border: 1px solid #a3cfbb !important;
+  border-radius: 0.375rem !important;
+  background-color: #d1e7dd !important;
+}
+
+.filmDescription {
+  border-top: 1px solid #dee2e6 !important;
+}
+
+.filmDescription small {
+  color: rgba(33, 37, 41, 0.75) !important;
+}
+
+.repertoireCardFooter {
+  padding-bottom: 1rem !important;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+  padding: 0.5rem 1rem;
+  background-color: rgba(33, 37, 41, 0.03);
+  border-top: 1px solid rgba(0, 0, 0, 0.175);
+}
+
+.repertoireCardFooter .repertoireRow {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+.repertoireCardFooter .repertoireCol {
+  padding-right: 0.25rem !important;
+  margin-top: 1rem !important;
+  flex: 0 0 auto;
+  width: 33.33333333%;
+  text-align: center !important;
+}
+
+.repertoireTicket {
+  color: rgb(33, 37, 41) !important;
+}
+
+.repertoireTicket::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  right: -15px;
+  top: calc(50% - 5px);
+  border: solid #6c757d;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  opacity: 0.5;
 }
